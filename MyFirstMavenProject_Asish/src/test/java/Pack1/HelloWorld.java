@@ -1,34 +1,65 @@
 package Pack1;
 
+import java.sql.Driver;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class HelloWorld {
 	
-	@Test
-	public void testHelloWorld() {
+	WebDriver driver = null;
+	
+	@BeforeTest
+	public void setUp() {
 		
-		System.out.println("Hello World");
-		System.out.println("Hello Asish Aravind");
-		System.out.println("Hello Automation-0308");
-		System.out.println("Hello Automation-0309");
-		WebDriver driver = null;
-		if(System.getProperty("browser").equalsIgnoreCase("chrome")) {
+	if(System.getProperty("browser").equalsIgnoreCase("chrome")) {
 			
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\asish\\git\\TestProject030521\\MyFirstMavenProject_Asish\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get(System.getProperty("url"));
 		}
-
 		
+	}
+	
+	@Test
+	public void testCase1() {
 		
-		//System.setProperty("webdriver.gecko.driver", "C:\\Users\\asish\\git\\TestProject030521\\MyFirstMavenProject_Asish\\geckodriver.exe");
-		//WebDriver driver = new FirefoxDriver();
+		System.out.println("Hello World-Test 1");
+		
 		driver.get("https://google.com");
 			
-		System.out.println("Test Complete-Asish Aravind-0310");
+		System.out.println("Test 1 complete");
+	}
+	
+	@Test
+	public void testCase2() {
+		
+		System.out.println("Hello World-Test 2");
+		
+		driver.get("https://google.com");
+			
+		System.out.println("Test 2 complete");
+	}
+	
+	@Test
+	public void testCase3() {
+		
+		System.out.println("Hello World-Test 3");
+		
+		driver.get("https://google.com");
+			
+		System.out.println("Test 3 complete");
+	}
+	
+	@AfterTest
+	public void flush() {
+		
+		driver.close();
+		
 	}
 
 }
