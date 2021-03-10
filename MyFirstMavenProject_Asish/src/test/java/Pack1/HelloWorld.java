@@ -20,7 +20,7 @@ public class HelloWorld {
 			
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\asish\\git\\TestProject030521\\MyFirstMavenProject_Asish\\chromedriver.exe");
 			driver = new ChromeDriver();
-			driver.get(System.getProperty("url"));
+			
 		}
 		
 	}
@@ -30,7 +30,7 @@ public class HelloWorld {
 		
 		System.out.println("Hello World-Test 1");
 		
-		driver.get("https://google.com");
+		driver.get(System.getProperty("url"));
 			
 		System.out.println("Test 1 complete");
 	}
@@ -40,7 +40,7 @@ public class HelloWorld {
 		
 		System.out.println("Hello World-Test 2");
 		
-		driver.get("https://google.com");
+		//driver.get("https://google.com");
 			
 		System.out.println("Test 2 complete");
 	}
@@ -50,7 +50,7 @@ public class HelloWorld {
 		
 		System.out.println("Hello World-Test 3");
 		
-		driver.get("https://google.com");
+		//driver.get("https://google.com");
 			
 		System.out.println("Test 3 complete");
 	}
