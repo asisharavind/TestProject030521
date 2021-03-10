@@ -15,6 +15,7 @@ public class HelloWorld {
 		System.out.println("Hello Automation-0309");
 		
 		//driver.get(System.getProperty("url"));
+		System.setProperty("webdriver.chrome.driver", "K:\\Parameterization\\geckodriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(System.getProperty("url"));
 	}
