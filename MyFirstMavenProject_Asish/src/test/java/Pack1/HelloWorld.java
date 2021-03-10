@@ -18,6 +18,7 @@ public class HelloWorld {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\asish\\git\\TestProject030521\\MyFirstMavenProject_Asish\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(System.getProperty("url"));
+		System.out.println("Test Complete");
 	}
 
 }
