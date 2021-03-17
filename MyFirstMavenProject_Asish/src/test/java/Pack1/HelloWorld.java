@@ -42,7 +42,7 @@ public class HelloWorld {
 		
 		//driver.get("https://google.com");
 			
-		System.out.println("Test 2 complete");
+		System.out.println("Test 2 complete..");
 	}
 	
 	@Test
