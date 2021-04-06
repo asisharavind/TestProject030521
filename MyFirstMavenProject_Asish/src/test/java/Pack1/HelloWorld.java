@@ -54,6 +54,7 @@ public class HelloWorld {
 		//driver.get("https://google.com");
 			
 		System.out.println("Test 3 complete");
+		System.out.println("new line_mavenTestNG-04052021");
 	}
 	
 	@AfterTest
