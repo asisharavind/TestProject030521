@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<!-- POM file changes in the master branch to form a new branch- Team Lead -->
 
 		<dependency>
 			<groupId>org.testng</groupId>
