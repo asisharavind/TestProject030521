@@ -8,7 +8,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
+
 		<!-- POM file changes in the master branch to form a new branch- TM 1 -->
+
+		<!-- POM file changes in the master branch to form a new branch- Team Lead -->
+
 
 		<dependency>
 			<groupId>org.testng</groupId>
